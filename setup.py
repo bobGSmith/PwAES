@@ -4,7 +4,7 @@ setup(
     name = 'PwAES',
     version = '1.0.0',
     description = 'password based AES encryption of text/ text files',
-    url = 'https://github.com/bobGSmith/AES_pw',
+    url = 'https://github.com/bobGSmith/PwAES',
     author = 'Bob G Smith',
     author_email = 'bobbyatopk@gmail.com',
     license = 'MIT',
