@@ -9,6 +9,6 @@ setup(
     author_email = 'bobbyatopk@gmail.com',
     license = 'MIT',
     packages = ['PwAES'],
-    install_requires = [],
+    install_requires = ["pwinput","pycrypto"],
     classifiers = ['Development Status :: 2 - Pre-Alpha','Intended Audience:: Developers','License :: MIT','Operating System :: OS Independent','Programming Language :: Python :: 3.8']
 )
