@@ -6,8 +6,13 @@ This is a commandline tool for password based aes encryption of text documents.
 You can encrypt the file with your ethereum private key by signing the filename to create the password. You could also just have a randomly generated password, or for lower security, a memorable word or phrase. 
 
 
-## Scripts 
-aes.py is reccomeneded as it has hidden pwinput. It uses EAX. The other AES_cbc.py uses CBC but still needs a little work.
+## Run as script 
+
+You can runn the following command to decrypt or encrypt a file: 
+
+```
+python3 -m PwAES PATH_TO_FILE
+```
 
 ## Quickstart 
 
