@@ -56,6 +56,7 @@ def decrypt_cyphertext_file (path,private_key):
     return (cipher.decrypt_and_verify(data[16+16:],data[0:16])).decode('utf-8')
 
 def login (path_to_account_data) : 
+    '''Login functionality for commandline apps. Decrypts an account_data file based on password.'''
     pw_privatekey = gen_pw_privatekey()
     account_data = decrypt_cyphertext_file(path_to_account_data,pw_privatekey)
     return account_data
