@@ -55,6 +55,11 @@ def decrypt_cyphertext_file (path,private_key):
     cipher = AES.new(private_key,AES.MODE_EAX,data[16:16+16])
     return (cipher.decrypt_and_verify(data[16+16:],data[0:16])).decode('utf-8')
 
+def login (path_to_account_data) : 
+    pw_privatekey = gen_pw_privatekey()
+    account_data = decrypt_cyphertext_file(path_to_account_data,pw_privatekey)
+    return account_data
+
 if __name__ == '__main__': 
     import sys
 
