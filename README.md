@@ -19,3 +19,7 @@ python3 -m PwAES PATH_TO_FILE
 ```shell
 python3 aes.py "path_to_file"
 ```
+
+## Login for apps 
+use the login function for creating a password based login for commandline apps. 
+This will decrypt file containing data needed for the app to run, e.g. account information. This decrypted data can then be used within the application. 
